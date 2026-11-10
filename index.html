@@ -1,0 +1,925 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="El plan del viaje al Nacional: cómo llegar, la casa, dónde comer y qué hacer en el rato libre.">
+<meta property="og:title" content="Rumbo a Monterrey · Nacional de básquetbol">
+<meta property="og:description" content="El plan del viaje del 11 al 16 de noviembre, paso a paso.">
+<meta property="og:image" content="https://dalifpibarra-png.github.io/rumbo-monterrey-snrei/photos/comedor.jpeg">
+<meta property="og:type" content="website">
+<title>Rumbo a Monterrey</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Oswald:wght@500;600;700&family=Literata:ital,opsz,wght@1,7..72,400;1,7..72,500&display=swap" rel="stylesheet">
+<script>(function(){var d=document.documentElement,R=false,p=null;try{R=matchMedia("(prefers-reduced-motion: reduce)").matches}catch(e){}try{p=localStorage.getItem("anim")}catch(e){}var lo=(navigator.hardwareConcurrency||8)<=4||(navigator.deviceMemory||8)<=4;window.__lowfx=lo;if(lo)d.classList.add("lowfx");window.__dpr=function(){var c=false;try{c=matchMedia("(pointer: coarse)").matches}catch(e){}return Math.min(window.devicePixelRatio||1,c?1.5:(lo?1:1.5))};window.__adapt=function(r,resize,onSlow){var n=0,t=0,l=0,done=0;return function(now){if(done)return;var dt=now-l;if(l&&dt<200){t+=dt;n++}l=now;if(n>=45){done=1;if(t/n>24){if(r.getPixelRatio()>1){r.setPixelRatio(1);if(resize)resize()}if(onSlow)onSlow()}}}};window.__osReduce=R;window.__motion=p==="full"?"full":p==="off"?"off":(R?"soft":"full");d.classList.add("mo-"+window.__motion);window.__errs=[];addEventListener("error",function(e){window.__errs.push((e.message||("no cargó: "+((e.target&&(e.target.src||e.target.href))||"?")))+(e.filename?" @"+e.filename.split("/").pop()+":"+e.lineno:""))},true);var f=1;try{f=parseFloat(localStorage.getItem("fz"))||1}catch(e){}d.style.setProperty("--fz",f)})();</script>
+<style>
+/* Concepto: el viaje como un partido en seis momentos (aterrizar, casa, comer, pasear, ayuda,
+   salida). Menú lateral fijo tipo "banca" con los seis momentos en orden, siempre a la mano en
+   el celular vertical. Portada con atardecer sobre el Cerro de la Silla y un balón en 3D. */
+:root{
+  --paper:#F4EEE2;
+  --ink:#1D1B24;
+  --ink-2:#4A4657;
+  --ink-3:#6E6979;
+  --card:#FFFFFF;
+  --soft:#EAE1CE;
+  --line:#DDD2BC;
+  --accent:#B0441A;
+  --accent-ink:#FFFFFF;
+  --accent-soft:#F6E1D4;
+  --ok:#2E7149;
+  --ok-soft:#DDEFE2;
+  --danger:#A8261F;
+  --danger-soft:#F8E0DD;
+  --night:#141933;
+  --night-ink:#F6EFDF;
+  --night-ink-2:#C9C2B0;
+  --f-display:'Oswald',Impact,'Arial Narrow',sans-serif;
+  --f-body:'Atkinson Hyperlegible','Segoe UI',system-ui,sans-serif;
+  --f-letter:'Literata',Georgia,serif;
+  --r:16px;
+  --navh:56px;
+  --railw:70px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#12131C; --ink:#F2EDE3; --ink-2:#CFC8B9; --ink-3:#A39C8D;
+    --card:#1C1E2B; --soft:#252838; --line:#323648;
+    --accent:#F08B4C; --accent-ink:#1B0F08; --accent-soft:#3A2418;
+    --ok:#7FCB98; --ok-soft:#1F3328; --danger:#F08A80; --danger-soft:#3A1E1C;
+    --night:#0B0E20; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#12131C; --ink:#F2EDE3; --ink-2:#CFC8B9; --ink-3:#A39C8D;
+  --card:#1C1E2B; --soft:#252838; --line:#323648;
+  --accent:#F08B4C; --accent-ink:#1B0F08; --accent-soft:#3A2418;
+  --ok:#7FCB98; --ok-soft:#1F3328; --danger:#F08A80; --danger-soft:#3A1E1C;
+  --night:#0B0E20; color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{font-size:calc(20px * var(--fz,1));scroll-behavior:smooth;scroll-padding-top:calc(var(--navh) + 14px);overflow-x:clip}
+html.mo-off,html.mo-soft{scroll-behavior:auto}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:1rem;line-height:1.55;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--night)}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;text-wrap:balance}
+h2{font-family:var(--f-display);font-weight:700;text-transform:uppercase;letter-spacing:.01em;font-size:clamp(1.5rem,5.4vw,2.1rem);line-height:1.1}
+h3{font-size:1.08rem;line-height:1.3}
+p{margin:0}
+.wrap{max-width:820px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.lead{font-size:1.04rem;color:var(--ink-2);max-width:60ch}
+.muted{color:var(--ink-3);font-size:.86rem}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:8px}
+
+/* ---------- barra superior ---------- */
+.topbar{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;height:var(--navh);background:var(--night);color:var(--night-ink);border-bottom:1px solid rgba(255,255,255,.08)}
+.topbar .in{height:100%;display:flex;align-items:center;gap:8px;padding-left:max(14px,env(safe-area-inset-left,0px));padding-right:max(12px,env(safe-area-inset-right,0px))}
+.topbar .where{flex:1;min-width:0;font-family:var(--f-display);text-transform:uppercase;letter-spacing:.05em;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.topbar .where b{color:#F2A26E;font-weight:600}
+.tb-btn{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:var(--night-ink);border-radius:999px;min-width:46px;height:40px;padding:0 12px;font-family:var(--f-display);font-size:16px;cursor:pointer}
+
+/* ---------- menú lateral (los seis momentos) ---------- */
+.rail{position:fixed;z-index:45;left:0;top:calc(env(safe-area-inset-top,0px) + var(--navh));bottom:0;width:calc(var(--railw) + env(safe-area-inset-left,0px));padding-left:env(safe-area-inset-left,0px);padding-bottom:env(safe-area-inset-bottom,0px);background:var(--night);display:flex;flex-direction:column;justify-content:space-evenly;border-right:1px solid rgba(255,255,255,.08)}
+.rail a{position:relative;display:flex;flex-direction:column;align-items:center;gap:3px;text-decoration:none;color:var(--night-ink-2);padding:8px 2px;border-left:4px solid transparent;transition:background .25s,color .25s}
+.rail .ri{font-size:24px;line-height:1;filter:grayscale(.35);transition:transform .25s,filter .25s}
+.rail .rn{position:absolute;top:4px;right:6px;font-family:var(--f-display);font-size:11px;opacity:.6}
+.rail .rl{font-family:var(--f-display);text-transform:uppercase;font-size:12.5px;letter-spacing:.04em}
+.rail .rd{display:none}
+.rail a.on{color:#fff;background:rgba(242,162,110,.16);border-left-color:#F2A26E}
+.rail a.on .ri{filter:none;transform:scale(1.15)}
+.rail a.now::after{content:"Ahora";position:absolute;bottom:-2px;left:50%;transform:translateX(-50%);background:var(--ok);color:#fff;font-size:9.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:1px 6px;border-radius:999px}
+main{padding-top:var(--navh);padding-left:calc(var(--railw) + env(safe-area-inset-left,0px))}
+main .wrap{padding-left:16px}
+@media (min-width:1000px){
+  :root{--railw:230px}
+  .rail{justify-content:flex-start;gap:6px;padding-top:24px}
+  .rail a{flex-direction:row;align-items:center;gap:14px;padding:14px 18px;text-align:left}
+  .rail .ri{font-size:26px}
+  .rail .rn{position:static;font-size:15px;opacity:.5;min-width:1em;order:-1}
+  .rail .rt{display:flex;flex-direction:column}
+  .rail .rl{font-size:16px}
+  .rail .rd{display:block;font-size:13px;color:var(--night-ink-2);opacity:.85}
+  .rail a.now::after{position:static;transform:none;margin-left:auto}
+}
+
+/* ---------- portada ---------- */
+.hero{background:var(--night);color:var(--night-ink);position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:0}
+.stage{position:relative;height:min(34svh,270px);background:linear-gradient(180deg,#1A1F45 0%,#3A2F62 42%,#8C4560 70%,#E58A4E 100%);overflow:hidden}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.stage .fallback{position:absolute;inset:auto 0 0 0;height:55%;width:100%;opacity:.9}
+.stage::after{content:"";position:absolute;inset:auto 0 0 0;height:50px;background:linear-gradient(180deg,transparent,var(--night));pointer-events:none}
+.stage .tag{position:absolute;left:12px;top:10px;z-index:2;font-family:var(--f-display);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#F6EFDF;background:rgba(20,25,51,.55);padding:5px 10px;border-radius:999px}
+.hero-copy{padding-block:4px 30px;display:flex;flex-direction:column;gap:14px}
+.hero .eyebrow{font-family:var(--f-display);font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;color:#F2A26E;font-weight:600}
+.hero h1{font-family:var(--f-display);font-weight:700;text-transform:uppercase;font-size:clamp(2.2rem,10vw,4rem);line-height:.98;color:#FFF6E3}
+.count{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--r);padding:10px 14px}
+.count-label{width:100%;font-size:.8rem;color:var(--night-ink-2)}
+.count-cell{display:flex;align-items:baseline;gap:5px}
+.count-cell b{font-family:var(--f-display);font-weight:700;font-size:2rem;line-height:1;color:#F2A26E;font-variant-numeric:tabular-nums}
+.count-cell span{font-size:.82rem;color:var(--night-ink-2)}
+.count-msg{font-family:var(--f-display);font-size:1.4rem;color:#F2A26E;text-transform:uppercase}
+.need-title{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.06em;font-size:1rem;color:#FFF6E3;margin-top:4px}
+.need{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.need a{display:flex;align-items:center;gap:10px;min-height:64px;padding:10px 12px;border-radius:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);text-decoration:none;color:#FFF6E3;font-weight:700;font-size:.9rem;line-height:1.2;transition:background .2s,transform .2s}
+.need a span{font-size:1.5rem;line-height:1;flex:none}
+.need a:hover{background:rgba(255,255,255,.14)}
+.need a.now{background:#F2A26E;color:#1B0F08;border-color:#F2A26E}
+.motion-toggle{align-self:flex-start;background:none;border:1px dashed rgba(255,255,255,.35);color:var(--night-ink-2);border-radius:999px;padding:8px 14px;font-size:.82rem;cursor:pointer}
+@media (min-width:900px){
+  .hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:32px;padding-block:34px}
+  .hero-copy{padding-block:0}
+  .stage{height:440px;border-radius:24px}
+  .stage::after{display:none}
+  .hero .wrap.hero-grid{max-width:1180px}
+}
+
+/* ---------- carta ---------- */
+.letter-sec{padding-block:36px 10px}
+.letter{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px 22px;position:relative;box-shadow:0 18px 40px -28px rgba(40,25,10,.35)}
+.letter p{font-family:var(--f-letter);font-style:italic;font-size:1.08rem;line-height:1.6}
+.letter p + p{margin-top:12px}
+.letter .sign{font-family:var(--f-display);font-style:normal;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);font-size:1.15rem;margin-top:14px}
+.stamp{position:absolute;right:16px;top:-18px;width:56px;height:56px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:flex;align-items:center;justify-content:center;font-size:1.5rem;transform:rotate(-10deg);box-shadow:0 8px 18px -8px rgba(0,0,0,.4)}
+
+/* ---------- momentos ---------- */
+.moment{padding-block:48px}
+.moment + .moment{border-top:1px solid var(--line)}
+.moment.band{background:var(--soft)}
+.m-head{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;align-items:center;margin-bottom:22px}
+.m-num{grid-row:span 2;font-family:var(--f-display);font-weight:700;font-size:3.4rem;line-height:.9;color:var(--accent);min-width:1.2ch;text-align:center}
+.m-kick{font-family:var(--f-display);font-size:.78rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3)}
+.m-head .lead{grid-column:1/-1;margin-top:8px}
+.sub{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.05em;font-size:1.05rem;margin:34px 0 12px;color:var(--ink);display:flex;align-items:center;gap:10px}
+.sub::after{content:"";flex:1;height:2px;background:var(--line)}
+
+/* frase de capítulo */
+.phrase-wrap{padding-block:56px 8px}
+.phrase{font-family:var(--f-display);font-weight:600;text-transform:uppercase;font-size:clamp(1.6rem,6.4vw,2.7rem);line-height:1.12;max-width:20ch;perspective:600px}
+.phrase .w{display:inline-block;transform-origin:50% 100%}
+.phrase em{font-style:normal;color:var(--accent);background:linear-gradient(transparent 70%,var(--accent-soft) 70%)}
+
+/* pasos */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.steps li{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+.steps .n{flex:none;width:42px;height:42px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-family:var(--f-display);font-weight:700;font-size:1.2rem;display:grid;place-items:center}
+.steps b{display:block;font-size:1.04rem}
+.steps p{color:var(--ink-2);margin-top:3px}
+
+/* pedir el auto */
+.ride{background:var(--card);border:2px solid var(--accent);border-radius:22px;padding:20px;display:grid;gap:14px}
+.ride-top{display:flex;gap:14px;align-items:center}
+.ride-top .ico{font-size:2.4rem;line-height:1}
+.ride-top h3{font-size:1.2rem}
+.ride-top p{color:var(--ink-2);font-size:.95rem}
+.addr{background:var(--soft);border-radius:14px;padding:14px 16px;font-size:1.08rem;font-weight:700;user-select:all}
+.addr small{display:block;font-weight:400;color:var(--ink-3);font-size:.85rem;margin-top:2px;user-select:none}
+.ride-btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:54px;padding:0 20px;border-radius:999px;text-decoration:none;font-weight:700;font-size:1rem;border:2px solid transparent;cursor:pointer;flex:1 1 auto}
+.btn-acc{background:var(--accent);color:var(--accent-ink)}
+.btn-line{border-color:var(--line);background:var(--card);color:var(--ink)}
+.ride-facts{display:flex;flex-wrap:wrap;gap:8px}
+.ride-facts span{background:var(--accent-soft);border-radius:999px;padding:5px 12px;font-size:.88rem;font-weight:700}
+.note{margin-top:14px;background:var(--accent-soft);border-radius:14px;padding:14px 16px}
+.note b{color:var(--accent)}
+
+/* código */
+.codebox{margin-top:14px;border:2.5px dashed var(--accent);border-radius:var(--r);padding:16px;background:var(--card);display:flex;gap:14px;align-items:center}
+.codebox .ico{font-size:1.9rem}
+.codebox b{display:block;font-family:var(--f-display);text-transform:uppercase;font-size:1.08rem;letter-spacing:.03em}
+
+/* fotos */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.gallery button{padding:0;border:none;background:var(--soft);border-radius:12px;overflow:hidden;cursor:zoom-in;aspect-ratio:4/3;position:relative;max-width:100%}
+.gallery button:first-child{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gallery button:hover img{transform:scale(1.04)}
+.gallery .cap{position:absolute;left:7px;bottom:7px;background:rgba(20,25,51,.75);color:#fff;font-size:.68rem;padding:3px 8px;border-radius:999px}
+@media (max-width:640px){.gallery{grid-template-columns:1fr 1fr}.gallery button:first-child{grid-column:1/-1;grid-row:auto;aspect-ratio:16/10}}
+.lightbox{position:fixed;inset:0;z-index:80;background:rgba(8,9,18,.93);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:calc(env(safe-area-inset-top,0px) + 16px) 16px calc(env(safe-area-inset-bottom,0px) + 16px)}
+.lightbox img{max-height:68vh;width:auto;max-width:100%;border-radius:12px}
+.lb-cap{color:#F6EFDF;margin-top:12px;font-size:1rem;text-align:center}
+.lb-row{display:flex;gap:12px;margin-top:14px}
+.lb-row button{background:#F6EFDF;color:#141933;border:none;border-radius:999px;min-width:60px;height:54px;font-size:1.25rem;font-weight:700;cursor:pointer;padding:0 18px}
+
+/* camas */
+.rooms{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (min-width:760px){.rooms{grid-template-columns:repeat(4,1fr)}}
+.room{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px;min-width:0}
+.room h3{font-family:var(--f-display);text-transform:uppercase;font-size:.92rem;letter-spacing:.05em;color:var(--accent)}
+.beds{display:flex;gap:6px;margin:10px 0 8px;flex-wrap:wrap;min-height:36px;align-items:flex-end}
+.bed{height:28px;border-radius:6px 6px 3px 3px;background:var(--soft);border:2px solid var(--ink-3);position:relative}
+.bed::before{content:"";position:absolute;top:4px;left:4px;width:9px;height:7px;border-radius:3px;background:var(--ink-3);opacity:.6}
+.bed.m{width:44px}.bed.m::after{content:"";position:absolute;top:4px;left:19px;width:9px;height:7px;border-radius:3px;background:var(--ink-3);opacity:.6}
+.bed.i{width:24px}
+.room p{font-size:.9rem;color:var(--ink-2)}
+.room .ppl{font-family:var(--f-display);font-size:1rem;color:var(--ink)}
+.total{margin-top:12px;font-family:var(--f-display);text-transform:uppercase;letter-spacing:.04em}
+.total b{color:var(--accent);font-size:1.25rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:.9rem}
+
+/* voltear */
+.flips{display:grid;gap:12px;grid-template-columns:1fr}
+@media (min-width:640px){.flips{grid-template-columns:1fr 1fr}}
+.flip{display:grid;perspective:1000px;cursor:pointer;background:none;border:none;padding:0;text-align:left;width:100%}
+.flip > div{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:var(--r);padding:18px;transition:transform .6s cubic-bezier(.2,.8,.2,1);min-height:150px;display:flex;flex-direction:column;gap:8px}
+.flip .front{background:var(--card);border:1px solid var(--line)}
+.flip .back{background:var(--night);color:var(--night-ink);transform:rotateY(180deg)}
+.flip[aria-pressed="true"] .front{transform:rotateY(-180deg)}
+.flip[aria-pressed="true"] .back{transform:rotateY(0)}
+html.mo-off .flip > div{transition:none}
+.flip .ico{font-size:1.8rem}
+.flip h3{font-size:1.1rem}
+.flip .tap{margin-top:auto;font-size:.8rem;color:var(--accent);font-weight:700}
+.flip .back p{color:var(--night-ink-2);font-size:.96rem}
+.flip .back .tap{color:#F2A26E}
+
+/* reglas */
+.rules{display:grid;gap:10px;grid-template-columns:1fr 1fr}
+.rule{display:flex;flex-direction:column;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+.rule .ico{font-size:1.5rem;line-height:1}
+.rule b{font-size:.98rem;line-height:1.3}
+.rule p{color:var(--ink-2);font-size:.88rem}
+
+/* comida */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.filters button{min-height:48px;padding:0 18px;border-radius:999px;border:2px solid var(--line);background:var(--card);font-weight:700;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.places{display:grid;gap:12px;grid-template-columns:1fr}
+@media (min-width:760px){.places{grid-template-columns:1fr 1fr}}
+.place{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.place-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.place h3{font-size:1.08rem}
+.place .kind{color:var(--ink-3);font-size:.86rem}
+.walk{flex:none;text-align:center;background:var(--accent-soft);border-radius:12px;padding:6px 10px;min-width:62px}
+.walk b{display:block;font-family:var(--f-display);font-size:1.25rem;line-height:1;color:var(--accent)}
+.walk span{font-size:.68rem;color:var(--ink-2);text-transform:uppercase;letter-spacing:.04em}
+.stars{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:.88rem;color:var(--ink-2)}
+.stars .st{color:#C98A12;font-weight:700}
+.stars .pr{background:var(--soft);border-radius:999px;padding:2px 9px;font-size:.78rem}
+.place p{color:var(--ink-2);font-size:.94rem}
+.go{font-weight:700;color:var(--accent);text-decoration:none;font-size:.92rem;margin-top:auto}
+.go::after{content:" ↗"}
+
+/* pasear */
+.planner{background:var(--night);color:var(--night-ink);border-radius:22px;padding:20px;margin-bottom:22px}
+.planner h3{font-family:var(--f-display);text-transform:uppercase;font-size:1.25rem;margin-bottom:14px;color:#FFF6E3}
+.planner .filters button{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2);color:var(--night-ink)}
+.planner .filters button[aria-pressed="true"]{background:#F2A26E;color:#1B0F08;border-color:#F2A26E}
+.plan ol{margin:0;padding-left:1.3em;display:grid;gap:10px;color:var(--night-ink-2)}
+.plan b{color:#FFF6E3}
+.sights{display:grid;gap:12px;grid-template-columns:1fr}
+@media (min-width:760px){.sights{grid-template-columns:1fr 1fr}}
+.sight{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px;display:flex;flex-direction:column;gap:8px}
+.sight .ico{font-size:1.9rem;line-height:1}
+.sight .how{display:flex;gap:8px;flex-wrap:wrap}
+.sight .how span{background:var(--soft);border-radius:999px;padding:3px 11px;font-size:.8rem;font-weight:700}
+.sight p{color:var(--ink-2);font-size:.94rem}
+
+/* ayuda */
+.sos{display:grid;gap:12px;grid-template-columns:1fr}
+@media (min-width:760px){.sos{grid-template-columns:1fr 1fr}}
+.sos-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px;display:flex;flex-direction:column;gap:6px}
+.sos-card.red{background:var(--danger-soft);border-color:var(--danger)}
+.sos-card .big{font-family:var(--f-display);font-size:2.6rem;line-height:1;color:var(--danger)}
+.sos-card h3{font-size:1.08rem}
+.sos-card p{color:var(--ink-2);font-size:.94rem}
+.sos-card .meta{font-family:var(--f-display);color:var(--accent);font-size:.92rem;letter-spacing:.03em}
+
+/* croquis */
+.map-card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:10px}
+.map-card svg{width:100%;height:auto;display:block}
+.map-info{margin-top:10px;background:var(--soft);border-radius:14px;padding:14px 16px;min-height:74px}
+.map-info b{display:block}
+.legend{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px}
+@media (max-width:560px){.legend{grid-template-columns:1fr}}
+@media (min-width:1100px){.legend{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.legend button{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;text-align:left;cursor:pointer;min-height:52px;font-size:.9rem}
+.legend button[aria-pressed="true"]{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)}
+.legend i{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:.75rem;font-weight:700;color:#fff}
+.mk{cursor:pointer}
+.mk circle.dot{transition:r .2s}
+.mk.on circle.dot{r:28}
+.pulse{transform-origin:center;transform-box:fill-box;animation:pulse 2.2s ease-out infinite}
+@keyframes pulse{0%{opacity:.6;transform:scale(.6)}100%{opacity:0;transform:scale(2.2)}}
+html.mo-off .pulse{animation:none;opacity:0}
+
+/* salida */
+.checks{display:grid;gap:10px}
+.check{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;cursor:pointer;min-height:58px}
+.check input{appearance:none;-webkit-appearance:none;flex:none;width:30px;height:30px;border-radius:9px;border:2.5px solid var(--ink-3);margin:0;display:grid;place-items:center;cursor:pointer;background:var(--card)}
+.check input::after{content:"";width:9px;height:16px;border:solid #fff;border-width:0 3.5px 3.5px 0;transform:rotate(45deg) translate(-1px,-2px) scale(0);transition:transform .15s}
+.check input:checked{background:var(--ok);border-color:var(--ok)}
+.check input:checked::after{transform:rotate(45deg) translate(-1px,-2px) scale(1)}
+.check:has(input:checked) b{text-decoration:line-through;text-decoration-thickness:2px;color:var(--ink-3)}
+.progress{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.progress .bar{flex:1;height:12px;background:var(--line);border-radius:999px;overflow:hidden}
+.progress .bar i{display:block;height:100%;width:100%;background:var(--ok);transform-origin:left;transform:scaleX(0);transition:transform .4s}
+.progress b{font-family:var(--f-display);font-size:1rem;white-space:nowrap}
+
+/* cierre */
+.finale{background:var(--night);color:var(--night-ink);text-align:center;padding-block:56px calc(90px + env(safe-area-inset-bottom,0px))}
+.finale h2{font-size:clamp(1.9rem,8vw,3rem);color:#FFF6E3}
+.finale p{color:var(--night-ink-2);margin-top:10px;font-size:1.02rem}
+.finale .ball{font-size:3rem;display:inline-block;margin-bottom:8px}
+.foot{margin-top:24px;font-size:.78rem!important;opacity:.8;max-width:60ch;margin-left:auto;margin-right:auto}
+
+/* CTA fijo */
+.sticky{position:fixed;left:calc(50% + (var(--railw) + env(safe-area-inset-left,0px)) / 2);bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:40;transform:translate(-50%,160%);transition:transform .35s cubic-bezier(.2,.8,.2,1);background:var(--accent);color:var(--accent-ink);border:none;border-radius:999px;min-height:52px;padding:0 20px;font-weight:700;font-size:.95rem;box-shadow:0 12px 26px -10px rgba(0,0,0,.45);cursor:pointer;white-space:nowrap}
+body.past-hero .sticky{transform:translate(-50%,0)}
+body.at-end .sticky{transform:translate(-50%,160%)}
+.toast{position:fixed;left:calc(50% + var(--railw) / 2);top:calc(var(--navh) + env(safe-area-inset-top,0px) + 12px);transform:translateX(-50%);z-index:90;background:var(--ok);color:#fff;padding:12px 20px;border-radius:999px;font-weight:700;opacity:0;transition:opacity .25s;pointer-events:none;white-space:nowrap}
+.toast.on{opacity:1}
+#diag{position:fixed;inset:auto 10px 10px 10px;z-index:99;background:#111;color:#9f9;font:12px/1.5 monospace;padding:12px;border-radius:10px;max-height:50vh;overflow:auto;white-space:pre-wrap}
+</style>
+
+<header class="topbar">
+  <div class="in">
+    <div class="where" id="where"><b>Rumbo a Monterrey</b> · 11 al 16 nov</div>
+    <button class="tb-btn" id="fzDown" aria-label="Letra más chica">A−</button>
+    <button class="tb-btn" id="fzUp" aria-label="Letra más grande">A+</button>
+  </div>
+</header>
+
+<nav class="rail" id="rail" aria-label="Momentos del viaje">
+  <a href="#llegar" data-k="llegar"><span class="rn">1</span><span class="ri">✈️</span><span class="rt"><span class="rl">Llegar</span><span class="rd">Al aterrizar</span></span></a>
+  <a href="#casa" data-k="casa"><span class="rn">2</span><span class="ri">🏠</span><span class="rt"><span class="rl">Casa</span><span class="rd">Entrar y acomodarse</span></span></a>
+  <a href="#comer" data-k="comer"><span class="rn">3</span><span class="ri">🍽️</span><span class="rt"><span class="rl">Comer</span><span class="rd">Cerquita de la casa</span></span></a>
+  <a href="#pasear" data-k="pasear"><span class="rn">4</span><span class="ri">🌳</span><span class="rt"><span class="rl">Pasear</span><span class="rd">En el rato libre</span></span></a>
+  <a href="#ayuda" data-k="ayuda"><span class="rn">5</span><span class="ri">🆘</span><span class="rt"><span class="rl">Ayuda</span><span class="rd">Si algo se ofrece</span></span></a>
+  <a href="#salida" data-k="salida"><span class="rn">6</span><span class="ri">🧳</span><span class="rt"><span class="rl">Salida</span><span class="rd">El lunes 16</span></span></a>
+</nav>
+
+<main>
+<!-- ================= PORTADA ================= -->
+<div class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="stage" id="stage">
+      <span class="tag">Cerro de la Silla · Monterrey</span>
+      <svg class="fallback" viewBox="0 0 400 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120 L0 70 L60 58 L120 30 L140 18 L158 34 L196 50 L226 42 L250 22 L262 12 L280 30 L320 54 L400 64 L400 120Z" fill="#232042"/></svg>
+      <canvas id="ball3d" aria-label="Balón de básquetbol rebotando frente al Cerro de la Silla" role="img"></canvas>
+    </div>
+    <div class="hero-copy">
+      <span class="eyebrow">Nacional de básquetbol · 11 al 16 nov</span>
+      <h1>Rumbo a Monterrey</h1>
+      <div class="count" id="count" aria-live="polite">
+        <span class="count-label" id="countLabel">Faltan para entrar a la casa (miércoles 11, 3:00 pm)</span>
+        <div class="count-cell"><b id="cD">1</b><span>día</span></div>
+        <div class="count-cell"><b id="cH">0</b><span>horas</span></div>
+        <div class="count-cell"><b id="cM">0</b><span>min</span></div>
+      </div>
+      <p class="need-title">¿Qué necesitan ahora?</p>
+      <div class="need" id="need">
+        <a href="#llegar" data-k="llegar"><span>✈️</span>Acabamos de aterrizar</a>
+        <a href="#casa" data-k="casa"><span>🔑</span>Ya llegamos a la casa</a>
+        <a href="#comer" data-k="comer"><span>🍽️</span>Tenemos hambre</a>
+        <a href="#pasear" data-k="pasear"><span>🌳</span>Tenemos tiempo libre</a>
+        <a href="#ayuda" data-k="ayuda"><span>🆘</span>Necesitamos ayuda</a>
+        <a href="#salida" data-k="salida"><span>🧳</span>Ya nos vamos</a>
+      </div>
+      <button class="motion-toggle" id="motionToggle" hidden>✨ Activar todas las animaciones</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CARTA ================= -->
+<div class="letter-sec">
+  <div class="wrap">
+    <div class="letter rv">
+      <div class="stamp" aria-hidden="true">🏀</div>
+      <p>Mamá, y todo el equipo: ustedes ya hicieron lo difícil, que fue llegar al Nacional. Aquí está el plan del viaje en el orden en que lo van a ir viviendo. Usen el menú de la izquierda para brincar a lo que necesiten.</p>
+      <p>Disfruten cada partido. Desde aquí les echamos porras.</p>
+      <div class="sign">Con cariño, Dalí</div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= 1 · LLEGAR ================= -->
+<section class="moment" id="llegar" data-chapter="Al aterrizar" data-k="llegar">
+  <div class="wrap">
+    <div class="m-head">
+      <span class="m-num">1</span>
+      <span class="m-kick">Miércoles 11 · al aterrizar</span>
+      <h2>Pidan su Uber aquí</h2>
+    </div>
+    <div class="ride rv">
+      <div class="ride-top"><span class="ico" aria-hidden="true">🚕</span><div><h3>Uber o DiDi, en "XL"</h3><p>Caben 6 con maletas: para las 13 son 3 autos. Que los tres pongan la misma dirección.</p></div></div>
+      <p class="addr" id="addrText">Manolo Martínez 329, Col. Del Prado, Monterrey<small>La casa no tiene cochera: que las bajen justo enfrente.</small></p>
+      <div class="ride-btns">
+        <button class="btn btn-acc copy-addr">📋 Copiar dirección</button>
+        <a class="btn btn-line" href="https://www.google.com/maps/dir/?api=1&amp;destination=Manolo+Mart%C3%ADnez+329,+Del+Prado,+64410+Monterrey,+N.L." target="_blank" rel="noopener">Ver en Maps ↗</a>
+      </div>
+      <div class="ride-facts"><span>⏱ unos 45 min</span><span>🔑 entrada desde las 3:00 pm</span></div>
+    </div>
+    <div class="note rv"><b>¿Llegan antes de las 3:00 pm?</b> Avísenme por WhatsApp y le pregunto al anfitrión si pueden dejar las maletas antes. Mientras, pueden comer a 2 minutos de la casa (momento 3).</div>
+  </div>
+</section>
+
+<div class="phrase-wrap"><div class="wrap"><p class="phrase">Del avión a la casa son 45 minutos. Lo demás es <em>disfrutar</em>.</p></div></div>
+
+<!-- ================= 2 · CASA ================= -->
+<section class="moment" id="casa" data-chapter="En la casa" data-k="casa" style="border-top:none">
+  <div class="wrap">
+    <div class="m-head">
+      <span class="m-num">2</span>
+      <span class="m-kick">Su casa por cinco noches</span>
+      <h2>Al llegar a la casa</h2>
+    </div>
+    <ol class="steps">
+      <li class="rv"><span class="n">1</span><div><b>Revisen su WhatsApp</b><p>El código de la caja de llaves se los mando el miércoles, cerca de las 3:00 pm.</p></div></li>
+      <li class="rv"><span class="n">2</span><div><b>Busquen la caja de seguridad</b><p>Está en la entrada. Marquen el código y saquen la llave.</p></div></li>
+      <li class="rv"><span class="n">3</span><div><b>Entren y acomódense</b><p>Nadie las recibe en persona. Si algo no abre, escríbanme.</p></div></li>
+    </ol>
+    <div class="codebox rv"><span class="ico" aria-hidden="true">🔐</span><div><b>El código no va en esta página</b><span class="muted">Por seguridad llega solo por WhatsApp.</span></div></div>
+
+    <h3 class="sub">Así es la casa</h3>
+    <div class="gallery" id="gallery">
+      <button data-i="0"><img src="photos/comedor.jpeg" alt="Comedor con mesa de madera para todo el equipo" loading="lazy"><span class="cap">Comedor</span></button>
+      <button data-i="1"><img src="photos/sala.jpeg" alt="Sala con dos sillones" loading="lazy"><span class="cap">Sala</span></button>
+      <button data-i="2"><img src="photos/cocina.jpeg" alt="Cocineta" loading="lazy"><span class="cap">Cocina</span></button>
+      <button data-i="3"><img src="photos/rec-2-matrimoniales.jpeg" alt="Recámara con dos camas matrimoniales" loading="lazy"><span class="cap">2 matrimoniales</span></button>
+      <button data-i="4"><img src="photos/rec-3-individuales.jpeg" alt="Recámara con tres camas individuales" loading="lazy"><span class="cap">3 individuales</span></button>
+      <button data-i="5"><img src="photos/rec-matrimonial.jpeg" alt="Recámara con cama matrimonial y clima" loading="lazy"><span class="cap">Matrimonial</span></button>
+      <button data-i="6"><img src="photos/cortinas.jpeg" alt="Recámaras separadas con cortinas" loading="lazy"><span class="cap">Cortinas</span></button>
+      <button data-i="7"><img src="photos/comedor-2.jpeg" alt="Otra vista del comedor" loading="lazy"><span class="cap">Comedor</span></button>
+      <button data-i="8"><img src="photos/rec-2-matrimoniales-b.jpeg" alt="Otra recámara con dos camas" loading="lazy"><span class="cap">Recámara</span></button>
+    </div>
+    <p class="muted" style="margin-top:8px">Toquen una foto para verla grande.</p>
+
+    <h3 class="sub">¿Quién duerme dónde?</h3>
+    <div class="rooms">
+      <div class="room rv"><h3>Recámara 1</h3><div class="beds"><i class="bed m"></i><i class="bed m"></i></div><p class="ppl">Hasta 4</p><p>2 matrimoniales</p></div>
+      <div class="room rv"><h3>Recámara 2</h3><div class="beds"><i class="bed i"></i><i class="bed i"></i><i class="bed i"></i></div><p class="ppl">3 personas</p><p>3 individuales</p></div>
+      <div class="room rv"><h3>Recámara 3</h3><div class="beds"><i class="bed m"></i><i class="bed m"></i></div><p class="ppl">Hasta 4</p><p>2 matrimoniales</p></div>
+      <div class="room rv"><h3>Recámara 4</h3><div class="beds"><i class="bed m"></i></div><p class="ppl">Hasta 2</p><p>1 matrimonial</p></div>
+    </div>
+    <p class="total">Total: <b>13 lugares</b> · 2 baños completos</p>
+    <div class="chips">
+      <span class="chip">❄️ Clima en las recámaras</span>
+      <span class="chip">📶 Wifi</span>
+      <span class="chip">📺 Smart TV</span>
+      <span class="chip">🍳 Cafetera y licuadora</span>
+      <span class="chip">🌳 Patio con asador</span>
+    </div>
+
+    <h3 class="sub">Cuidado con esto</h3>
+    <div class="flips">
+      <button class="flip rv" aria-pressed="false"><div class="front"><span class="ico">🚿</span><h3>Los baños se ponen resbalosos</h3><span class="tap">Toca para ver qué hacer ↻</span></div><div class="back"><h3>Con calma al bañarse</h3><p>Pongan una toalla en el piso al salir de bañarse. Si algo se tapa, avísenme y lo reporto al anfitrión.</p><span class="tap">Toca para regresar ↻</span></div></button>
+      <button class="flip rv" aria-pressed="false"><div class="front"><span class="ico">🛏️</span><h3>Las recámaras no tienen puertas</h3><span class="tap">Toca para ver qué hacer ↻</span></div><div class="back"><h3>Se separan con cortinas</h3><p>Pónganse de acuerdo en quién duerme dónde, sobre todo si alguien ronca o madruga.</p><span class="tap">Toca para regresar ↻</span></div></button>
+      <button class="flip rv" aria-pressed="false"><div class="front"><span class="ico">📶</span><h3>El wifi a veces falla</h3><span class="tap">Toca para ver qué hacer ↻</span></div><div class="back"><h3>Tengan datos en el celular</h3><p>Para Uber y mapas, usen sus datos por si acaso. La clave del wifi se las paso junto con el código.</p><span class="tap">Toca para regresar ↻</span></div></button>
+      <button class="flip rv" aria-pressed="false"><div class="front"><span class="ico">🤫</span><h3>Reglas de la casa</h3><span class="tap">Toca para verlas ↻</span></div><div class="back"><h3>Las del anfitrión</h3><p>Silencio después de las 10:00 pm, prohibido fumar (también vapear), sin fiestas ni visitas, máximo 13 personas y cuidar la casa como propia.</p><span class="tap">Toca para regresar ↻</span></div></button>
+    </div>
+  </div>
+</section>
+
+<div class="phrase-wrap"><div class="wrap"><p class="phrase">Después del partido, lo que sigue es <em>comer</em> rico.</p></div></div>
+
+<!-- ================= 3 · COMER ================= -->
+<section class="moment" id="comer" data-chapter="Dónde comer" data-k="comer" style="border-top:none">
+  <div class="wrap">
+    <div class="m-head">
+      <span class="m-num">3</span>
+      <span class="m-kick">Calificaciones reales de Google</span>
+      <h2>Dónde comer cerca</h2>
+      <p class="lead">Del más cerca al más lejos. Los minutos son caminando con calma.</p>
+    </div>
+    <div class="filters" id="foodFilters" role="group" aria-label="Filtrar por comida del día">
+      <button aria-pressed="true" data-f="all">Todos</button>
+      <button aria-pressed="false" data-f="des">Desayuno</button>
+      <button aria-pressed="false" data-f="com">Comida</button>
+      <button aria-pressed="false" data-f="cen">Cena</button>
+    </div>
+    <div class="places" id="places">
+      <article class="place rv" data-w="com cen">
+        <div class="place-top"><div><h3>Tacos Keramos</h3><div class="kind">Tacos · a la vuelta</div></div><div class="walk"><b>1</b><span>min</span></div></div>
+        <div class="stars"><span class="st">★ 4.8</span><span>108 reseñas</span><span class="pr">$100 a 200</span></div>
+        <p>Keramos 322, la calle de atrás. Lo más rápido para cenar.</p>
+        <a class="go" href="https://www.google.com/maps/search/?api=1&amp;query=Tacos+Keramos+Keramos+322+Monterrey" target="_blank" rel="noopener">Ver en Maps</a>
+      </article>
+      <article class="place rv" data-w="des com">
+        <div class="place-top"><div><h3>Almuerzos y Comidas Claudia</h3><div class="kind">Almuerzos caseros · misma calle</div></div><div class="walk"><b>2</b><span>min</span></div></div>
+        <div class="stars"><span class="st">★ 4.6</span><span>33 reseñas</span><span class="pr">$100 a 200</span></div>
+        <p>Manolo Martínez 441. Elogian el sazón de sus guisos. Para desayunar antes del partido; cierra a media tarde.</p>
+        <a class="go" href="https://www.google.com/maps/search/?api=1&amp;query=Almuerzos+y+Comidas+Claudia+Manolo+Mart%C3%ADnez+441+Monterrey" target="_blank" rel="noopener">Ver en Maps</a>
+      </article>
+      <article class="place rv" data-w="cen">
+        <div class="place-top"><div><h3>Fizz Hamburguesas</h3><div class="kind">Hamburguesas</div></div><div class="walk"><b>4</b><span>min</span></div></div>
+        <div class="stars"><span class="st">★ 4.6</span><span>90 reseñas</span><span class="pr">$100 a 200</span></div>
+        <p>Heroico Colegio Militar 420. Abre hasta la noche.</p>
+        <a class="go" href="https://www.google.com/maps/search/?api=1&amp;query=Fizz+Hamburguesas+Heroico+Colegio+Militar+420+Monterrey" target="_blank" rel="noopener">Ver en Maps</a>
+      </article>
+      <article class="place rv" data-w="com cen">
+        <div class="place-top"><div><h3>Noreste Grill</h3><div class="kind">Cortes · para festejar</div></div><div class="walk"><b>9</b><span>min</span></div></div>
+        <div class="stars"><span class="st">★ 4.6</span><span>1,000 reseñas</span><span class="pr">$200 a 600</span></div>
+        <p>En Patio Céntrika. El lugar para la cena de festejo; abre hasta tarde.</p>
+        <a class="go" href="https://www.google.com/maps/search/?api=1&amp;query=Noreste+Grill+Patio+C%C3%A9ntrika+Monterrey" target="_blank" rel="noopener">Ver en Maps</a>
+      </article>
+      <article class="place rv" data-w="com">
+        <div class="place-top"><div><h3>Don Mila</h3><div class="kind">Comida casera</div></div><div class="walk"><b>9</b><span>min</span></div></div>
+        <div class="stars"><span class="st">★ 4.9</span><span>102 reseñas</span><span class="pr">$100 a 200</span></div>
+        <p>Av. Alfonso Reyes 402. La mejor calificada de la zona; cierra a las 6:00 pm.</p>
+        <a class="go" href="https://www.google.com/maps/search/?api=1&amp;query=Don+Mila+Av+Alfonso+Reyes+402+Monterrey" target="_blank" rel="noopener">Ver en Maps</a>
+      </article>
+      <article class="place rv" data-w="com">
+        <div class="place-top"><div><h3>Comidas Salome</h3><div class="kind">Comida corrida</div></div><div class="walk"><b>11</b><span>min</span></div></div>
+        <div class="stars"><span class="st">★ 4.8</span><span>58 reseñas</span><span class="pr">$100 a 200</span></div>
+        <p>Juan Ponce de León 121. Como en casa; cierra a las 3:30 pm.</p>
+        <a class="go" href="https://www.google.com/maps/search/?api=1&amp;query=Comidas+Salome+Juan+Ponce+de+Le%C3%B3n+121+Monterrey" target="_blank" rel="noopener">Ver en Maps</a>
+      </article>
+      <article class="place rv" data-w="des">
+        <div class="place-top"><div><h3>Tacos y Almuerzos Serrato</h3><div class="kind">Almuerzos</div></div><div class="walk"><b>11</b><span>min</span></div></div>
+        <div class="stars"><span class="st">★ 4.2</span><span>186 reseñas</span><span class="pr">$100 a 200</span></div>
+        <p>Otra opción de desayuno si Claudia está llena.</p>
+        <a class="go" href="https://www.google.com/maps/search/?api=1&amp;query=Tacos+Y+Almuerzos+Serrato+Monterrey" target="_blank" rel="noopener">Ver en Maps</a>
+      </article>
+      <article class="place rv" data-w="cen">
+        <div class="place-top"><div><h3>Cervecería de la Patria</h3><div class="kind">Restaurante · abre noche</div></div><div class="walk"><b>11</b><span>min</span></div></div>
+        <div class="stars"><span class="st">★ 4.7</span><span>364 reseñas</span><span class="pr">$200 a 300</span></div>
+        <p>Plaza Catehua, Av. Alfonso Reyes. Para platicar del partido con calma.</p>
+        <a class="go" href="https://www.google.com/maps/search/?api=1&amp;query=Cervecer%C3%ADa+de+la+Patria+Plaza+Catehua+Monterrey" target="_blank" rel="noopener">Ver en Maps</a>
+      </article>
+      <article class="place rv" data-w="des com">
+        <div class="place-top"><div><h3>Los Frijoles Merendero</h3><div class="kind">Desayuno regio famoso · centro</div></div><div class="walk"><b>Uber</b><span>15 min</span></div></div>
+        <div class="stars"><span class="st">★ 4.6</span><span>14,869 reseñas</span><span class="pr">$200 a 300</span></div>
+        <p>Albino Espinosa 239 Ote. De los más queridos de Monterrey; mejor temprano.</p>
+        <a class="go" href="https://www.google.com/maps/search/?api=1&amp;query=Los+Frijoles+Merendero+y+Cantina+Monterrey" target="_blank" rel="noopener">Ver en Maps</a>
+      </article>
+    </div>
+    <p class="muted" style="margin-top:12px">Calificaciones de Google Maps al 10 de noviembre de 2026. Los horarios cambian por día: revísenlos en Maps.</p>
+  </div>
+</section>
+
+<!-- ================= 4 · PASEAR ================= -->
+<section class="moment band" id="pasear" data-chapter="Rato libre" data-k="pasear">
+  <div class="wrap">
+    <div class="m-head">
+      <span class="m-num">4</span>
+      <span class="m-kick">Cuando no haya partido</span>
+      <h2>Qué hacer en el rato libre</h2>
+    </div>
+    <div class="planner rv">
+      <h3>¿Cuánto tiempo libre tienen?</h3>
+      <div class="filters" role="group" aria-label="Tiempo libre">
+        <button aria-pressed="true" data-p="0">1 a 2 horas</button>
+        <button aria-pressed="false" data-p="1">Medio día</button>
+        <button aria-pressed="false" data-p="2">Día completo</button>
+      </div>
+      <div class="plan" data-plan="0"><ol><li><b>Plaza Céntrika a pie</b> (10 min): Walmart, Suburbia y cine.</li><li><b>O el Museo del Vidrio</b> (10 min en Uber), bajo techo.</li><li>De regreso, unos tacos a la vuelta de la casa.</li></ol></div>
+      <div class="plan" data-plan="1" hidden><ol><li><b>Uber a la Macroplaza</b> (unos 15 min).</li><li>Catedral, plaza y la foto con el Cerro de la Silla.</li><li><b>Comer en el Barrio Antiguo</b> o en Los Frijoles, y Uber de regreso.</li></ol></div>
+      <div class="plan" data-plan="2" hidden><ol><li><b>Mañana:</b> Macroplaza y Catedral.</li><li><b>Mediodía:</b> lancha por el Paseo Santa Lucía hasta el Parque Fundidora, sentadas todo el camino.</li><li><b>Tarde:</b> Fundidora y el Horno 3; de regreso, cena en Noreste Grill.</li></ol></div>
+    </div>
+    <div class="sights">
+      <article class="sight rv"><span class="ico">🏺</span><h3>Museo del Vidrio</h3><div class="how"><span>2 km</span><span>10 min en Uber</span><span>★ 4.6</span></div><p>El más cercano a la casa. Bajo techo y tranquilo.</p><a class="go" href="https://www.google.com/maps/search/?api=1&amp;query=Museo+del+Vidrio+Monterrey" target="_blank" rel="noopener">Ver en Maps</a></article>
+      <article class="sight rv"><span class="ico">⛪</span><h3>Macroplaza, Catedral y Barrio Antiguo</h3><div class="how"><span>4.6 km</span><span>15 min</span></div><p>El centro de Monterrey: plano, con bancas y restaurantes.</p><a class="go" href="https://www.google.com/maps/search/?api=1&amp;query=Macroplaza+Monterrey" target="_blank" rel="noopener">Ver en Maps</a></article>
+      <article class="sight rv"><span class="ico">🚤</span><h3>Paseo Santa Lucía en lancha</h3><div class="how"><span>sale del centro</span></div><p>Recorren el río sentadas, del centro hasta Fundidora.</p><a class="go" href="https://www.google.com/maps/search/?api=1&amp;query=Paseo+Santa+Luc%C3%ADa+Monterrey" target="_blank" rel="noopener">Ver en Maps</a></article>
+      <article class="sight rv"><span class="ico">🏭</span><h3>Parque Fundidora y Horno 3</h3><div class="how"><span>6.3 km</span><span>16 min</span></div><p>Parque enorme con el museo del acero. Para una tarde completa.</p><a class="go" href="https://www.google.com/maps/search/?api=1&amp;query=Parque+Fundidora+Monterrey" target="_blank" rel="noopener">Ver en Maps</a></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5 · AYUDA ================= -->
+<section class="moment" id="ayuda" data-chapter="Si algo se ofrece" data-k="ayuda">
+  <div class="wrap">
+    <div class="m-head">
+      <span class="m-num">5</span>
+      <span class="m-kick">Todo a unas cuadras</span>
+      <h2>Si algo se ofrece</h2>
+    </div>
+    <div class="sos">
+      <div class="sos-card red rv"><span class="big">911</span><h3>Emergencias</h3><p>Ambulancia, policía o bomberos, desde cualquier celular.</p></div>
+      <div class="sos-card rv"><span class="meta">Siempre</span><h3>Dalí, por WhatsApp</h3><p>Para lo que sea, también cosas de la casa. Yo hablo con el anfitrión.</p></div>
+      <div class="sos-card rv"><span class="meta">415 m · 6 min a pie</span><h3>Cruz Roja</h3><p>Unidad de Atención Médica, Av. Alfonso Reyes casi con Henry Dunant.</p></div>
+      <div class="sos-card rv"><span class="meta">450 m · abierta 24 horas</span><h3>Clínica Cuauhtémoc y Famosa</h3><p>Hospital privado, Henry Dunant 100 Pte.</p></div>
+      <div class="sos-card rv"><span class="meta">560 m · hasta las 11 pm</span><h3>Farmacias Benavides</h3><p>Junto a Plaza Céntrika. También hay farmacia en el Walmart.</p></div>
+    </div>
+    <h3 class="sub">Todo en un croquis</h3>
+    <div class="map-card rv">
+      <svg id="croquis" viewBox="0 0 890 680" role="img" aria-label="Croquis de la colonia Del Prado con la casa, restaurantes, farmacia, Walmart, Cruz Roja y clínica">
+        <rect width="890" height="680" fill="var(--paper)"/>
+        <rect x="680" y="130" width="210" height="380" rx="10" fill="var(--soft)"/>
+        <text x="785" y="122" text-anchor="middle" font-size="26" fill="var(--ink-3)" font-family="Atkinson Hyperlegible,sans-serif">Plaza Céntrika</text>
+        <rect x="330" y="510" width="80" height="50" rx="6" fill="var(--ok-soft)"/>
+        <ellipse cx="85" cy="465" rx="48" ry="38" fill="var(--soft)"/>
+        <g stroke="var(--line)" stroke-linecap="round" fill="none">
+          <path d="M0 95 H890" stroke-width="22"/>
+          <path d="M155 0 L75 300 L40 680" stroke-width="20"/>
+          <path d="M660 95 L620 680" stroke-width="16"/>
+          <path d="M70 300 H650" stroke-width="10"/>
+          <path d="M66 352 H645" stroke-width="12"/>
+          <path d="M62 405 H640" stroke-width="10"/>
+          <path d="M58 450 H640" stroke-width="10"/>
+          <path d="M54 505 H640" stroke-width="10"/>
+          <path d="M50 558 H640" stroke-width="10"/>
+          <path d="M46 612 H890" stroke-width="12"/>
+          <path d="M208 95 V680" stroke-width="10"/>
+          <path d="M318 95 V680" stroke-width="10"/>
+          <path d="M410 95 V680" stroke-width="10"/>
+        </g>
+        <g font-family="Atkinson Hyperlegible,sans-serif" font-size="24" fill="var(--ink-3)">
+          <text x="330" y="82">Av. Ruiz Cortines</text>
+          <text x="0" y="0" transform="translate(118 200) rotate(-75)">Av. Alfonso Reyes</text>
+          <text x="0" y="0" transform="translate(650 300) rotate(-86)">Vicente Guerrero</text>
+          <text x="420" y="293">Keramos</text>
+          <text x="420" y="345" font-weight="700" fill="var(--ink)">Manolo Martínez</text>
+          <text x="420" y="398">Jacaranda</text>
+          <text x="420" y="498">H. Colegio Militar</text>
+          <text x="540" y="600">Henry Dunant</text>
+        </g>
+        <g id="markers"></g>
+      </svg>
+      <div class="map-info" id="mapInfo" aria-live="polite"><b>🏠 La casa</b>Manolo Martínez 329. Desde aquí se miden todas las distancias.</div>
+      <div class="legend" id="legend"></div>
+      <p class="muted" style="margin-top:10px">Croquis aproximado, hecho con Google Maps. Distancias en línea recta.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 6 · SALIDA ================= -->
+<section class="moment band" id="salida" data-chapter="La salida" data-k="salida">
+  <div class="wrap">
+    <div class="m-head">
+      <span class="m-num">6</span>
+      <span class="m-kick">Lunes 16 · antes de las 11:00 am</span>
+      <h2>Antes de irse</h2>
+      <p class="lead">Vayan palomeando. Cuando todo esté listo, avísenme y yo le escribo al anfitrión.</p>
+    </div>
+    <div class="progress"><div class="bar"><i id="pgSalida"></i></div><b id="txSalida">0 de 6</b></div>
+    <div class="checks" data-list="salida">
+      <label class="check"><input type="checkbox" id="s1"><b>Revisar camas y enchufes (cargadores, lentes)</b></label>
+      <label class="check"><input type="checkbox" id="s2"><b>Platos lavados y basura en bolsas</b></label>
+      <label class="check"><input type="checkbox" id="s3"><b>Climas, luces y tele apagados</b></label>
+      <label class="check"><input type="checkbox" id="s4"><b>Ventanas y puertas cerradas</b></label>
+      <label class="check"><input type="checkbox" id="s5"><b>La llave de vuelta en la caja</b></label>
+      <label class="check"><input type="checkbox" id="s6"><b>Pedir los autos con 3 horas antes del vuelo</b></label>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CIERRE ================= -->
+<div class="finale" id="final">
+  <div class="wrap">
+    <span class="ball" id="finBall" aria-hidden="true">🏀</span>
+    <h2>¡A romperla en el Nacional!</h2>
+    <p>Casa cómoda, ciudad bonita y un equipo que ya se ganó el viaje.</p>
+    <p class="foot">Datos de la casa del anuncio de Airbnb. Calificaciones y distancias de Google Maps al 10 de noviembre de 2026.</p>
+  </div>
+</div>
+</main>
+
+<button class="sticky copy-addr" id="sticky">📍 Copiar dirección</button>
+<div class="toast" id="toast" role="status">¡Dirección copiada!</div>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <img id="lbImg" src="photos/comedor.jpeg" alt="">
+  <div class="lb-cap" id="lbCap"></div>
+  <div class="lb-row">
+    <button id="lbPrev" aria-label="Foto anterior">←</button>
+    <button id="lbClose" aria-label="Cerrar">✕ Cerrar</button>
+    <button id="lbNext" aria-label="Foto siguiente">→</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  "use strict";
+  var $=function(s,c){return (c||document).querySelector(s);};
+  var $$=function(s,c){return [].slice.call((c||document).querySelectorAll(s));};
+  var M=window.__motion, FULL=M==="full", SOFT=M==="soft";
+  function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v);}catch(e){return null;}}
+
+  /* ---------- tamaño de letra ---------- */
+  var fz=parseFloat(store("fz"))||1;
+  function setFz(v){fz=Math.max(.9,Math.min(1.35,Math.round(v*100)/100));document.documentElement.style.setProperty("--fz",fz);store("fz",String(fz));if(window.ScrollTrigger)setTimeout(function(){ScrollTrigger.refresh();},50);}
+  $("#fzUp").addEventListener("click",function(){setFz(fz+.1);});
+  $("#fzDown").addEventListener("click",function(){setFz(fz-.1);});
+
+  var mt=$("#motionToggle");
+  if(SOFT){mt.hidden=false;mt.addEventListener("click",function(){store("anim","full");location.reload();});}
+
+  /* ---------- cuenta regresiva y "ahora les toca" (Monterrey = UTC-6) ---------- */
+  var IN=Date.parse("2026-11-11T15:00:00-06:00"), OUT=Date.parse("2026-11-16T11:00:00-06:00");
+  function mtyDate(ms){return new Date(ms-6*3600e3).toISOString().slice(0,10);}
+  function nowKey(now){var d=mtyDate(now);if(d==="2026-11-11")return now<IN?"llegar":"casa";if(d==="2026-11-16")return "salida";return null;}
+  function tick(){
+    var now=Date.now(), c=$("#count");
+    if(now<IN){
+      var s=Math.floor((IN-now)/1000), d=Math.floor(s/86400), h=Math.floor(s%86400/3600), m=Math.floor(s%3600/60);
+      $("#cD").textContent=d;$("#cH").textContent=h;$("#cM").textContent=m;
+      $("#cD").nextElementSibling.textContent=d===1?"día":"días";
+      $("#cH").nextElementSibling.textContent=h===1?"hora":"horas";
+    }else if(now<OUT){
+      var n=Math.floor((Date.parse(mtyDate(now)+"T00:00:00-06:00")-Date.parse("2026-11-11T00:00:00-06:00"))/86400e3)+1;
+      c.innerHTML='<span class="count-label">Ya están en Monterrey</span><span class="count-msg">Día '+n+' de 6 · ¡a jugar!</span>';
+    }else{
+      c.innerHTML='<span class="count-label">El viaje terminó</span><span class="count-msg">¡Bienvenidas de regreso!</span>';
+    }
+    var k=nowKey(now);
+    $$("#need a, #rail a").forEach(function(a){a.classList.toggle("now",a.getAttribute("data-k")===k);});
+  }
+  tick();setInterval(tick,30000);
+
+  /* ---------- copiar dirección ---------- */
+  var ADDR="Manolo Martínez 329, Col. Del Prado, 64410, Monterrey, N.L.";
+  var toast=$("#toast"),tt;
+  function showToast(msg){toast.textContent=msg;toast.classList.add("on");clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove("on");},2400);}
+  $$(".copy-addr").forEach(function(b){b.addEventListener("click",function(){
+    function fallback(){var p=$("#addrText");var r=document.createRange();r.selectNodeContents(p.firstChild);var s=getSelection();s.removeAllRanges();s.addRange(r);p.scrollIntoView({block:"center"});showToast("Mantengan presionado para copiar");}
+    try{navigator.clipboard.writeText(ADDR).then(function(){showToast("¡Copiada! Péguenla en Uber");},fallback);}catch(e){fallback();}
+  });});
+
+  /* ---------- lista de salida ---------- */
+  $$(".checks").forEach(function(box){
+    var inputs=$$("input",box), pg=$("#pgSalida"), tx=$("#txSalida");
+    function upd(){var n=inputs.filter(function(i){return i.checked;}).length;tx.textContent=n===inputs.length?"¡Todo listo!":n+" de "+inputs.length;pg.style.transform="scaleX("+(n/inputs.length)+")";}
+    inputs.forEach(function(i){if(store("ck-"+i.id)==="1")i.checked=true;i.addEventListener("change",function(){store("ck-"+i.id,i.checked?"1":"0");upd();});});
+    upd();
+  });
+
+  /* ---------- tarjetas que se voltean ---------- */
+  $$(".flip").forEach(function(f){f.addEventListener("click",function(){f.setAttribute("aria-pressed",f.getAttribute("aria-pressed")==="true"?"false":"true");});});
+
+  /* ---------- tiempo libre ---------- */
+  var pb=$$(".planner button");
+  pb.forEach(function(b){b.addEventListener("click",function(){
+    pb.forEach(function(x){x.setAttribute("aria-pressed",x===b?"true":"false");});
+    $$(".plan").forEach(function(p){p.hidden=p.getAttribute("data-plan")!==b.getAttribute("data-p");});
+  });});
+
+  /* ---------- filtros de comida ---------- */
+  var fb=$$("#foodFilters button");
+  fb.forEach(function(b){b.addEventListener("click",function(){
+    fb.forEach(function(x){x.setAttribute("aria-pressed",x===b?"true":"false");});
+    var f=b.getAttribute("data-f");
+    $$("#places .place").forEach(function(p){p.hidden=!(f==="all"||(p.getAttribute("data-w")||"").indexOf(f)>-1);if(!p.hidden){p.style.opacity=1;p.style.transform="none";}});
+    if(window.ScrollTrigger)ScrollTrigger.refresh();
+  });});
+
+  /* ---------- galería ---------- */
+  var gb=$$("#gallery button"), lb=$("#lightbox"), li=0;
+  function showLb(i){li=(i+gb.length)%gb.length;var im=$("img",gb[li]);$("#lbImg").src=im.getAttribute("src");$("#lbImg").alt=im.alt;$("#lbCap").textContent=im.alt+" · "+(li+1)+" de "+gb.length;lb.hidden=false;}
+  function closeLb(){lb.hidden=true;}
+  gb.forEach(function(b,i){b.addEventListener("click",function(){showLb(i);$("#lbClose").focus();});});
+  $("#lbPrev").addEventListener("click",function(){showLb(li-1);});
+  $("#lbNext").addEventListener("click",function(){showLb(li+1);});
+  $("#lbClose").addEventListener("click",closeLb);
+  lb.addEventListener("click",function(e){if(e.target===lb)closeLb();});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape")closeLb();});
+
+  /* ---------- croquis ---------- */
+  var P=[
+    {k:"casa",x:195,y:345,c:"#B0441A",l:"🏠",t:"La casa",d:"Manolo Martínez 329. Desde aquí se miden todas las distancias."},
+    {k:"tk",x:250,y:300,c:"#C98A12",l:"1",t:"Tacos Keramos",d:"Keramos 322, la calle de atrás. 33 m, 1 min. ★ 4.8"},
+    {k:"cl",x:300,y:352,c:"#C98A12",l:"2",t:"Almuerzos Claudia",d:"Manolo Martínez 441, misma calle. 125 m, 2 min. ★ 4.6"},
+    {k:"fz",x:262,y:505,c:"#C98A12",l:"3",t:"Fizz Hamburguesas",d:"Heroico Colegio Militar 420. 255 m, 4 min. ★ 4.6"},
+    {k:"pq",x:350,y:470,c:"#6E6979",l:"⛪",t:"Parroquia San Francisco de Asís",d:"A unas cuadras, por si quieren ir a misa el domingo."},
+    {k:"cr",x:85,y:628,c:"#A8261F",l:"+",t:"Cruz Roja",d:"Unidad de Atención Médica, Av. Alfonso Reyes. 415 m, 6 min."},
+    {k:"cc",x:470,y:625,c:"#A8261F",l:"H",t:"Clínica Cuauhtémoc y Famosa",d:"Hospital privado abierto las 24 horas. 450 m."},
+    {k:"ng",x:700,y:158,c:"#C98A12",l:"4",t:"Noreste Grill",d:"Patio Céntrika. 560 m, 9 min. ★ 4.6 con 1,000 reseñas."},
+    {k:"wm",x:780,y:368,c:"#2E7149",l:"W",t:"Walmart y Plaza Céntrika",d:"Súper, farmacia, Suburbia y cine. 660 m, 10 min."},
+    {k:"fb",x:820,y:600,c:"#2E7149",l:"Rx",t:"Farmacias Benavides",d:"La Chimenea, abre hasta las 11 pm. 560 m."}
+  ];
+  var g=$("#markers"), NS="http://www.w3.org/2000/svg", leg=$("#legend"), info=$("#mapInfo"), mk={};
+  function el(n,a){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);return e;}
+  P.forEach(function(p){
+    var grp=el("g",{"class":"mk",tabindex:"0",role:"button","aria-label":p.t});
+    if(p.k==="casa")grp.appendChild(el("circle",{cx:p.x,cy:p.y,r:26,fill:p.c,"class":"pulse"}));
+    grp.appendChild(el("circle",{cx:p.x,cy:p.y,r:p.k==="casa"?28:22,fill:p.c,stroke:"#fff","stroke-width":3,"class":"dot"}));
+    var t=el("text",{x:p.x,y:p.y+(p.l.length>1&&p.k!=="casa"?7:9),"text-anchor":"middle","font-size":p.k==="casa"?26:(p.l.length>1?18:23),"font-weight":"700",fill:"#fff","font-family":"Atkinson Hyperlegible,sans-serif"});
+    t.textContent=p.l;grp.appendChild(t);
+    g.appendChild(grp);mk[p.k]=grp;
+    var b=document.createElement("button");b.setAttribute("aria-pressed",p.k==="casa"?"true":"false");b.innerHTML='<i style="background:'+p.c+'">'+p.l+'</i>'+p.t;leg.appendChild(b);
+    function pick(){P.forEach(function(q){mk[q.k].classList.toggle("on",q.k===p.k);});$$("button",leg).forEach(function(x){x.setAttribute("aria-pressed",x===b?"true":"false");});info.innerHTML="<b>"+p.t+"</b>"+p.d;}
+    grp.addEventListener("click",pick);grp.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();pick();}});b.addEventListener("click",pick);
+  });
+  mk.casa.classList.add("on");
+
+  /* ---------- menú lateral: momento actual + CTA fijo ---------- */
+  var chapters=$$("section[data-chapter]"), rail=$$("#rail a"), where=$("#where"), hero=$("#top"), fin=$("#final"), body=document.body, ticking=false;
+  function onScroll(){if(ticking)return;ticking=true;requestAnimationFrame(function(){
+    var hb=hero.getBoundingClientRect().bottom, fr=fin.getBoundingClientRect().top, cur=null, lim=innerHeight*.4;
+    for(var i=0;i<chapters.length;i++){if(chapters[i].getBoundingClientRect().top<lim)cur=chapters[i];}
+    body.classList.toggle("past-hero",hb<innerHeight*.2);
+    body.classList.toggle("at-end",fr<innerHeight);
+    var k=cur?cur.getAttribute("data-k"):null;
+    rail.forEach(function(a){a.classList.toggle("on",a.getAttribute("data-k")===k);});
+    where.innerHTML=cur?'<b>'+(chapters.indexOf(cur)+1)+'</b> · '+cur.getAttribute("data-chapter"):'<b>Rumbo a Monterrey</b> · 11 al 16 nov';
+    ticking=false;});}
+  addEventListener("scroll",onScroll,{passive:true});onScroll();
+
+  /* ---------- movimiento (GSAP) ---------- */
+  var G=window.gsap, ST=window.ScrollTrigger;
+  if(G&&ST&&M!=="off"){
+    G.registerPlugin(ST);
+    G.from(".hero-copy > *",{y:FULL?24:0,opacity:0,duration:.7,stagger:.07,ease:"power3.out",clearProps:"transform"});
+    G.from("#rail a",{x:FULL?-30:0,opacity:0,duration:.5,stagger:.06,ease:"power2.out",delay:.2,clearProps:"transform"});
+    $$(".phrase").forEach(function(p){
+      var html=p.innerHTML.replace(/<em>(.*?)<\/em>/,"\u0001$1\u0002");
+      p.innerHTML=html.split(/\s+/).map(function(w){var hl=w.indexOf("\u0001")>-1;w=w.replace(/[\u0001\u0002]/g,"");return '<span class="w">'+(hl?"<em>"+w+"</em>":w)+'</span>';}).join(" ");
+      G.fromTo($$(".w",p),{opacity:.12,rotateX:FULL?-70:0,y:FULL?10:0},{opacity:1,rotateX:0,y:0,stagger:.1,ease:"none",scrollTrigger:{trigger:p,start:"top 88%",end:"bottom 45%",scrub:.7}});
+    });
+    $$(".m-num").forEach(function(n){G.from(n,{scale:FULL?.4:1,opacity:0,duration:.6,ease:"back.out(2)",scrollTrigger:{trigger:n,start:"top 90%",once:true}});});
+    var rv=$$(".rv").filter(function(e){return e.getBoundingClientRect().top>innerHeight;});
+    G.set(rv,{opacity:0,y:FULL?40:0,rotateX:FULL?12:0,transformPerspective:900,transformOrigin:"50% 0%"});
+    ST.batch(rv,{start:"top 92%",once:true,onEnter:function(b){G.to(b,{opacity:1,y:0,rotateX:0,duration:.7,stagger:.07,ease:"power3.out",overwrite:true});}});
+    G.fromTo("#finBall",{y:-60,rotate:-90},{y:0,rotate:0,ease:"bounce.out",duration:1.3,scrollTrigger:{trigger:"#final",start:"top 85%",once:true}});
+    if(FULL){$$(".bed").forEach(function(b){G.from(b,{y:-14,opacity:0,duration:.5,ease:"back.out(2)",scrollTrigger:{trigger:b,start:"top 94%",once:true}});});}
+  }
+
+  /* ---------- 3D: balón frente al Cerro de la Silla ---------- */
+  function scene(){
+    var cv=$("#ball3d"), stage=$("#stage"), T=window.THREE;
+    if(!cv||!T)return;
+    var R;
+    try{R=new T.WebGLRenderer({canvas:cv,antialias:!window.__lowfx,alpha:true});}catch(e){window.__errs.push("WebGL: "+e.message);return;}
+    $(".fallback",stage).style.display="none";
+    R.setPixelRatio(window.__dpr());R.outputEncoding=T.sRGBEncoding;R.setClearColor(0x000000,0);
+    var S=new T.Scene(), C=new T.PerspectiveCamera(38,1,.1,100);
+    function lin(h){return new T.Color(h).convertSRGBToLinear();}
+    S.add(new T.HemisphereLight(lin(0xffe2c2),lin(0x2a2550),.95));
+    var sun=new T.DirectionalLight(lin(0xffc58f),1.25);sun.position.set(-4,3,5);S.add(sun);
+    var rim=new T.DirectionalLight(lin(0x9fb2ff),.5);rim.position.set(4,2,-3);S.add(rim);
+    function ridge(pts,color,z,y,s){
+      var sh=new T.Shape();sh.moveTo(pts[0][0],-3);pts.forEach(function(p){sh.lineTo(p[0],p[1]);});sh.lineTo(pts[pts.length-1][0],-3);sh.lineTo(pts[0][0],-3);
+      var m=new T.Mesh(new T.ExtrudeGeometry(sh,{depth:.8,bevelEnabled:false}),new T.MeshStandardMaterial({color:lin(color),roughness:1,flatShading:true}));
+      m.position.set(0,y,z);m.scale.setScalar(s);S.add(m);return m;
+    }
+    ridge([[-14,-.4],[-9,.4],[-5,1.1],[-1,.6],[3,1.3],[8,.5],[14,.2]],0x5a3f6c,-14,-1.2,1);
+    var silla=ridge([[-12,-.5],[-8,0],[-5.2,.7],[-3.6,2.1],[-2.7,3.2],[-2.2,3.6],[-1.7,2.9],[-.9,2.2],[0,1.9],[.9,2.2],[1.7,2.9],[2.3,3.5],[2.6,3.9],[3.1,3.2],[4.4,1.8],[6.5,.8],[9,.3],[12,0]],0x2b2348,-9,-1.6,.95);
+    var lights=new T.BufferGeometry(), N=180, pos=new Float32Array(N*3), i;
+    for(i=0;i<N;i++){pos[i*3]=(Math.random()-.5)*20;pos[i*3+1]=-1.85+Math.random()*.35;pos[i*3+2]=-7.5+Math.random()*1.5;}
+    lights.setAttribute("position",new T.BufferAttribute(pos,3));
+    var city=new T.Points(lights,new T.PointsMaterial({color:0xffc98a,size:.07,transparent:true,opacity:.85}));S.add(city);
+    var c2=document.createElement("canvas");c2.width=1024;c2.height=512;var x=c2.getContext("2d");
+    var gr=x.createLinearGradient(0,0,0,512);gr.addColorStop(0,"#c4551d");gr.addColorStop(.5,"#e0742f");gr.addColorStop(1,"#c4551d");x.fillStyle=gr;x.fillRect(0,0,1024,512);
+    for(i=0;i<9000;i++){x.fillStyle="rgba(80,25,5,"+(Math.random()*.18)+")";x.fillRect(Math.random()*1024,Math.random()*512,2,2);}
+    x.strokeStyle="#1a0f0a";x.lineWidth=9;x.lineCap="round";
+    x.beginPath();x.moveTo(0,256);x.lineTo(1024,256);x.stroke();
+    [0,512,1024].forEach(function(cx){x.beginPath();x.moveTo(cx,0);x.lineTo(cx,512);x.stroke();});
+    var rr=55*Math.PI/180;
+    [256,768].forEach(function(cx){
+      x.beginPath();var first=true,lat,dl;
+      for(lat=-rr;lat<=rr+1e-6;lat+=rr/60){dl=Math.acos(Math.min(1,Math.cos(rr)/Math.cos(lat)));var px=cx+dl/(2*Math.PI)*1024,py=256-lat/Math.PI*512;if(first){x.moveTo(px,py);first=false;}else x.lineTo(px,py);}
+      for(lat=rr;lat>=-rr-1e-6;lat-=rr/60){dl=Math.acos(Math.min(1,Math.cos(rr)/Math.cos(lat)));x.lineTo(cx-dl/(2*Math.PI)*1024,256-lat/Math.PI*512);}
+      x.stroke();
+    });
+    var tex=new T.CanvasTexture(c2);tex.encoding=T.sRGBEncoding;tex.anisotropy=4;
+    var ball=new T.Mesh(new T.SphereGeometry(1.1,64,48),new T.MeshStandardMaterial({map:tex,roughness:.78,metalness:0}));
+    ball.rotation.z=.35;S.add(ball);
+    var sc=document.createElement("canvas");sc.width=sc.height=128;var sx=sc.getContext("2d");var rg=sx.createRadialGradient(64,64,4,64,64,62);rg.addColorStop(0,"rgba(10,8,20,.55)");rg.addColorStop(1,"rgba(10,8,20,0)");sx.fillStyle=rg;sx.fillRect(0,0,128,128);
+    var shadow=new T.Mesh(new T.PlaneGeometry(2.8,2.8),new T.MeshBasicMaterial({map:new T.CanvasTexture(sc),transparent:true,depthWrite:false}));
+    shadow.rotation.x=-Math.PI/2;shadow.position.y=-1.62;S.add(shadow);
+    var floor=new T.Mesh(new T.CircleGeometry(4.2,48),new T.MeshStandardMaterial({color:lin(0x8a5a3a),roughness:.9,transparent:true,opacity:.35}));
+    floor.rotation.x=-Math.PI/2;floor.position.y=-1.64;S.add(floor);
+    var W=1,H=1,portrait=false;
+    function size(){W=stage.clientWidth;H=stage.clientHeight;portrait=W/H<1.15;R.setSize(W,H,false);C.aspect=W/H;C.fov=portrait?50:36;C.position.set(0,.5,portrait?7.2:7.6);C.lookAt(0,.4,0);C.updateProjectionMatrix();}
+    size();addEventListener("resize",size);
+    var adapt=window.__adapt(R,size), run=true, t0=performance.now(), mx=0, my=0;
+    if(FULL&&matchMedia("(pointer: fine)").matches){stage.addEventListener("pointermove",function(e){var r=stage.getBoundingClientRect();mx=(e.clientX-r.left)/r.width-.5;my=(e.clientY-r.top)/r.height-.5;});}
+    new IntersectionObserver(function(en){var v=en[0].isIntersecting;if(v&&!run){run=true;requestAnimationFrame(loop);}run=v;},{threshold:0}).observe(stage);
+    function loop(now){
+      if(!run)return;
+      var t=(now-t0)/1000, sp=0;
+      if(FULL){var r=hero.getBoundingClientRect();sp=Math.max(0,Math.min(1,-r.top/Math.max(1,r.height)));}
+      if(FULL){
+        var ph=(t*1.25)%1, hgt=4*ph*(1-ph);
+        ball.position.y=-.5+hgt*1.5;
+        var sq=Math.max(0,1-hgt/.12);
+        ball.scale.set(1+sq*.07,1-sq*.1,1+sq*.07);
+        ball.rotation.x+=.012;ball.rotation.y+=.02;
+        shadow.scale.setScalar(1.15-hgt*.5);shadow.material.opacity=1-hgt*.6;
+      }else{
+        ball.position.y=-.1+Math.sin(t*1.2)*.12;ball.rotation.y+=.006;
+      }
+      S.rotation.y=(mx*.18)+sp*.5;S.rotation.x=my*.05;
+      C.position.y=.5+sp*1.2;
+      silla.position.x=Math.sin(t*.05)*.2;
+      city.material.opacity=.65+Math.sin(t*2)*.15;
+      R.render(S,C);adapt(now);
+      if(M!=="off")requestAnimationFrame(loop);
+    }
+    requestAnimationFrame(loop);
+  }
+  try{scene();}catch(e){window.__errs.push("3D: "+e.message);}
+
+  /* ---------- #diag ---------- */
+  function diag(){
+    if(location.hash!=="#diag")return;
+    var gl=false;try{gl=!!document.createElement("canvas").getContext("webgl");}catch(e){}
+    var d=document.getElementById("diag")||document.body.appendChild(Object.assign(document.createElement("pre"),{id:"diag"}));
+    d.textContent="modo: "+M+"\nreducir movimiento (SO): "+window.__osReduce+"\nequipo modesto: "+window.__lowfx+"\nWebGL: "+gl+"\nGSAP: "+!!window.gsap+" · Three: "+!!window.THREE+"\npantalla: "+innerWidth+"x"+innerHeight+" @"+devicePixelRatio+"\nletra: "+fz+"\nnavegador: "+navigator.userAgent+"\nerrores: "+JSON.stringify(window.__errs);
+  }
+  diag();addEventListener("hashchange",diag);
+})();
+</script>
+</html>
