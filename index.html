@@ -195,6 +195,12 @@ main .wrap{padding-left:16px}
 .codebox .ico{font-size:1.9rem}
 .codebox b{display:block;font-family:var(--f-display);text-transform:uppercase;font-size:1.08rem;letter-spacing:.03em}
 
+.wifi{margin-top:14px;background:var(--card);border:2px solid var(--ok);border-radius:var(--r);padding:16px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.wifi .ico{font-size:1.9rem;line-height:1}
+.wifi > div{flex:1;min-width:190px}
+.wifi b{display:block;font-family:var(--f-display);text-transform:uppercase;font-size:1.08rem;letter-spacing:.03em;color:var(--ok)}
+.wifi p{margin-top:4px}
+.wifi .sel{font-weight:700;user-select:all;word-break:break-all;font-variant-numeric:tabular-nums}
 /* fotos */
 .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
 .gallery button{padding:0;border:none;background:var(--soft);border-radius:12px;overflow:hidden;cursor:zoom-in;aspect-ratio:4/3;position:relative;max-width:100%}
@@ -439,6 +445,7 @@ body.at-end .sticky{transform:translate(-50%,160%)}
       <li class="rv"><span class="n">3</span><div><b>Entren y acomódense</b><p>Nadie las recibe en persona. Si algo no abre, escríbanme.</p></div></li>
     </ol>
     <div class="codebox rv"><span class="ico" aria-hidden="true">🔐</span><div><b>El código no va en esta página</b><span class="muted">Por seguridad llega solo por WhatsApp.</span></div></div>
+    <div class="wifi rv"><span class="ico" aria-hidden="true">📶</span><div><b>Wifi de la casa</b><p>Red: <span class="sel">Totalplay-46A3</span></p><p>Clave: <span class="sel">46A32A39J5ExC6t9</span></p></div><button class="btn btn-acc copy-wifi">📋 Copiar clave</button></div>
 
     <h3 class="sub">Así es la casa</h3>
     <div class="gallery" id="gallery">
@@ -474,7 +481,7 @@ body.at-end .sticky{transform:translate(-50%,160%)}
     <div class="flips">
       <button class="flip rv" aria-pressed="false"><div class="front"><span class="ico">🚿</span><h3>Los baños se ponen resbalosos</h3><span class="tap">Toca para ver qué hacer ↻</span></div><div class="back"><h3>Con calma al bañarse</h3><p>Pongan una toalla en el piso al salir de bañarse. Si algo se tapa, avísenme y lo reporto al anfitrión.</p><span class="tap">Toca para regresar ↻</span></div></button>
       <button class="flip rv" aria-pressed="false"><div class="front"><span class="ico">🛏️</span><h3>Las recámaras no tienen puertas</h3><span class="tap">Toca para ver qué hacer ↻</span></div><div class="back"><h3>Se separan con cortinas</h3><p>Pónganse de acuerdo en quién duerme dónde, sobre todo si alguien ronca o madruga.</p><span class="tap">Toca para regresar ↻</span></div></button>
-      <button class="flip rv" aria-pressed="false"><div class="front"><span class="ico">📶</span><h3>El wifi a veces falla</h3><span class="tap">Toca para ver qué hacer ↻</span></div><div class="back"><h3>Tengan datos en el celular</h3><p>Para Uber y mapas, usen sus datos por si acaso. El nombre y la clave del wifi se los paso por WhatsApp.</p><span class="tap">Toca para regresar ↻</span></div></button>
+      <button class="flip rv" aria-pressed="false"><div class="front"><span class="ico">📶</span><h3>El wifi a veces falla</h3><span class="tap">Toca para ver qué hacer ↻</span></div><div class="back"><h3>Tengan datos en el celular</h3><p>Para Uber y mapas, usen sus datos por si acaso. Los datos del wifi están arriba, en este mismo momento 2.</p><span class="tap">Toca para regresar ↻</span></div></button>
       <button class="flip rv" aria-pressed="false"><div class="front"><span class="ico">🤫</span><h3>Reglas de la casa</h3><span class="tap">Toca para verlas ↻</span></div><div class="back"><h3>Las del anfitrión</h3><p>Silencio después de las 10:00 pm, prohibido fumar (también vapear), sin fiestas ni visitas, solo las personas registradas y cuidar la casa como propia.</p><span class="tap">Toca para regresar ↻</span></div></button>
     </div>
   </div>
@@ -737,6 +744,8 @@ body.at-end .sticky{transform:translate(-50%,160%)}
     function fallback(){var p=$("#addrText");var r=document.createRange();r.selectNodeContents(p.firstChild);var s=getSelection();s.removeAllRanges();s.addRange(r);p.scrollIntoView({block:"center"});showToast("Mantengan presionado para copiar");}
     try{navigator.clipboard.writeText(ADDR).then(function(){showToast("¡Copiada! Péguenla en Uber");},fallback);}catch(e){fallback();}
   });});
+
+  $$(".copy-wifi").forEach(function(b){b.addEventListener("click",function(){try{navigator.clipboard.writeText("46A32A39J5ExC6t9").then(function(){showToast("¡Clave del wifi copiada!");},function(){showToast("Mantengan presionada la clave para copiar");});}catch(e){showToast("Mantengan presionada la clave para copiar");}});});
 
   /* ---------- lista de salida ---------- */
   $$(".checks").forEach(function(box){
