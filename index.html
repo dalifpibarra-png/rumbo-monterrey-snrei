@@ -440,12 +440,12 @@ body.at-end .sticky{transform:translate(-50%,160%)}
       <h2>Al llegar a la casa</h2>
     </div>
     <ol class="steps">
-      <li class="rv"><span class="n">1</span><div><b>Revisen su WhatsApp</b><p>El código de la caja de llaves se los mando el miércoles, cerca de las 3:00 pm.</p></div></li>
-      <li class="rv"><span class="n">2</span><div><b>Busquen la caja de seguridad</b><p>Está en la entrada. Marquen el código y saquen la llave.</p></div></li>
+      <li class="rv"><span class="n">1</span><div><b>Revisen su WhatsApp</b><p>El código de la puerta se los mando por WhatsApp. No lo pongo aquí por seguridad.</p></div></li>
+      <li class="rv"><span class="n">2</span><div><b>Abran con la chapa de seguridad</b><p>Está en la entrada. Marquen el código y aprieten el <b>botón de en medio</b>. Listo, ya abre.</p></div></li>
       <li class="rv"><span class="n">3</span><div><b>Entren y acomódense</b><p>Nadie las recibe en persona. Si algo no abre, escríbanme.</p></div></li>
     </ol>
     <div class="codebox rv"><span class="ico" aria-hidden="true">🔐</span><div><b>El código no va en esta página</b><span class="muted">Por seguridad llega solo por WhatsApp.</span></div></div>
-    <div class="wifi rv"><span class="ico" aria-hidden="true">📶</span><div><b>Wifi de la casa</b><p>Red: <span class="sel">Totalplay-46A3</span></p><p>Clave: <span class="sel">46A32A39J5ExC6t9</span></p></div><button class="btn btn-acc copy-wifi">📋 Copiar clave</button></div>
+    <div class="wifi rv"><span class="ico" aria-hidden="true">📶</span><div><b>Wifi de la casa</b><p>Red: <span class="sel">Izzi-F4E6</span></p><p>Clave: <span class="sel">189C2768F4E6</span></p></div><button class="btn btn-acc copy-wifi">📋 Copiar clave</button></div>
 
     <h3 class="sub">Así es la casa</h3>
     <div class="gallery" id="gallery">
@@ -664,7 +664,7 @@ body.at-end .sticky{transform:translate(-50%,160%)}
       <label class="check"><input type="checkbox" id="s1"><b>Revisar camas y enchufes (cargadores, lentes)</b></label>
       <label class="check"><input type="checkbox" id="s3"><b>Climas, luces y tele apagados</b></label>
       <label class="check"><input type="checkbox" id="s4"><b>Ventanas y puertas cerradas</b></label>
-      <label class="check"><input type="checkbox" id="s5"><b>La llave de vuelta en la caja</b></label>
+      <label class="check"><input type="checkbox" id="s5"><b>La puerta bien cerrada con la chapa</b></label>
       <label class="check"><input type="checkbox" id="s6"><b>Pedir los autos con 3 horas antes del vuelo</b></label>
     </div>
   </div>
@@ -745,7 +745,7 @@ body.at-end .sticky{transform:translate(-50%,160%)}
     try{navigator.clipboard.writeText(ADDR).then(function(){showToast("¡Copiada! Péguenla en Uber");},fallback);}catch(e){fallback();}
   });});
 
-  $$(".copy-wifi").forEach(function(b){b.addEventListener("click",function(){try{navigator.clipboard.writeText("46A32A39J5ExC6t9").then(function(){showToast("¡Clave del wifi copiada!");},function(){showToast("Mantengan presionada la clave para copiar");});}catch(e){showToast("Mantengan presionada la clave para copiar");}});});
+  $$(".copy-wifi").forEach(function(b){b.addEventListener("click",function(){try{navigator.clipboard.writeText("189C2768F4E6").then(function(){showToast("¡Clave del wifi copiada!");},function(){showToast("Mantengan presionada la clave para copiar");});}catch(e){showToast("Mantengan presionada la clave para copiar");}});});
 
   /* ---------- lista de salida ---------- */
   $$(".checks").forEach(function(box){
